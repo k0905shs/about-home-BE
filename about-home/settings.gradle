@@ -1,4 +1,4 @@
-rootProject.name = 'my-home'
+rootProject.name = 'about-home'
 include 'home-core'
 include 'home-app-api'
 include 'admin-app-api'

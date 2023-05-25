@@ -8,5 +8,4 @@ public class HomeApiApplication {
     public static void main(String[] args) {
         SpringApplication.run(HomeApiApplication.class, args);
     }
-
 }

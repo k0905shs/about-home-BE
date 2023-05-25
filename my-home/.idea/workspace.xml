@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="4bc142c2-96d8-49be-8322-c68f9176e9b6" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-app-api/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-app-api/src/main/java/com/admin/AdminApiApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-app-api/src/main/resources/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home-app-api/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home-app-api/src/main/java/com/myHome/HomeApiApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home-app-api/src/main/java/com/myHome/config/LoggingAdvice.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home-app-api/src/main/java/com/myHome/config/handler/EndpointSuccessHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home-app-api/src/main/java/com/myHome/controller/HomeCheckController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home-app-api/src/main/java/com/myHome/model/homeCheck/HomeCheckDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home-app-api/src/main/java/com/myHome/model/openApi/BuildingRentDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home-app-api/src/main/java/com/myHome/model/openApi/BuildingSaleDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home-app-api/src/main/java/com/myHome/model/openApi/GovCommonDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home-app-api/src/main/java/com/myHome/model/openApi/LandPriceDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home-app-api/src/main/java/com/myHome/model/openApi/StanReginDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home-app-api/src/main/java/com/myHome/repository/LandPrice/LandPriceCustomRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home-app-api/src/main/java/com/myHome/repository/LandPrice/LandPriceRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home-app-api/src/main/java/com/myHome/repository/LandPrice/LandPriceRepositoryImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home-app-api/src/main/java/com/myHome/repository/PriorityRepay/PriorityRepayCustomRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home-app-api/src/main/java/com/myHome/repository/PriorityRepay/PriorityRepayRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home-app-api/src/main/java/com/myHome/repository/PriorityRepay/PriorityRepayRepositoryImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home-app-api/src/main/java/com/myHome/repository/buildingRent/BuildingRentCustomRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home-app-api/src/main/java/com/myHome/repository/buildingRent/BuildingRentRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home-app-api/src/main/java/com/myHome/repository/buildingRent/BuildingRentRepositoryImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home-app-api/src/main/java/com/myHome/repository/buildingSale/BuildingSaleCustomRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home-app-api/src/main/java/com/myHome/repository/buildingSale/BuildingSaleRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home-app-api/src/main/java/com/myHome/repository/buildingSale/BuildingSaleRepositoryImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home-app-api/src/main/java/com/myHome/repository/searchRecord/SearchRecordRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home-app-api/src/main/java/com/myHome/service/GovService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home-app-api/src/main/java/com/myHome/service/GovServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home-app-api/src/main/java/com/myHome/service/HomeCheckService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home-app-api/src/main/java/com/myHome/service/HomeCheckServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home-app-api/src/main/resources/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home-app-api/src/test/java/com/myHome/entity/postTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home-core/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home-core/src/main/java/com/myHome/collection/BuildingRent.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home-core/src/main/java/com/myHome/collection/BuildingSale.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home-core/src/main/java/com/myHome/collection/LandPrice.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home-core/src/main/java/com/myHome/collection/PriorityRepay.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home-core/src/main/java/com/myHome/collection/SearchRecord.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home-core/src/main/java/com/myHome/collection/StanRegin.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home-core/src/main/java/com/myHome/common/BuildingType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home-core/src/main/java/com/myHome/common/GovRequestUri.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home-core/src/main/java/com/myHome/common/PostType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home-core/src/main/java/com/myHome/common/ResponseFormat.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home-core/src/main/java/com/myHome/config/MongoConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home-core/src/main/java/com/myHome/config/core/GlobalResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home-core/src/main/java/com/myHome/config/core/Trace.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home-core/src/main/java/com/myHome/config/jpa/CommonAuditorAware.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home-core/src/main/java/com/myHome/config/jpa/JpaAuditingConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home-core/src/main/java/com/myHome/config/jpa/QuerydslConfiguration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home-core/src/main/java/com/myHome/entity/Post.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home-core/src/main/java/com/myHome/entity/base/BaseTimeEntity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home-core/src/main/java/com/myHome/util/AddressCodeUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/개발중 정리" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$/home-core">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="my-home" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="my-home" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="my-home" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2QGw1QpX0NS80igIx4eZAWNX8Ds" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/Users/kimseonghyeon/about-home-BE/my-home",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "spring.configuration.checksum": "b6c1b932b66d0739eaa47f3fc716e452",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/home-app-api/src/main/resources" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.HomeApiApplication">
+    <configuration name="my-home [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="clean" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="about-home" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="about-home" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AdminApiApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="my-home.admin-app-api.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.admin.AdminApiApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HomeApiApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="my-home.home-app-api.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.myHome.HomeApiApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.my-home [clean]" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4bc142c2-96d8-49be-8322-c68f9176e9b6" name="Changes" comment="" />
+      <created>1684993010331</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1684993010331</updated>
+      <workItem from="1684993011441" duration="328000" />
+      <workItem from="1684993464766" duration="339000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
