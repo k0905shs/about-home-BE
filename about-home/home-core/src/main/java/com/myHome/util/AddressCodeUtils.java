@@ -16,6 +16,10 @@ public class AddressCodeUtils {
      */
     public static String getPnu(String buildingCode, String jibun) {
         StringBuilder sb = new StringBuilder(buildingCode.substring(0, 11));
+        //가끔 토지/임야 코드가 0으로 오는 케이스 제거
+        if(sb.charAt(sb.length()-1) == '0'){
+            sb.replace(sb.length() - 1, sb.length(), "1");
+        }
 
         if (jibun.contains("-")) {
             String[] arr = jibun.split("-");
