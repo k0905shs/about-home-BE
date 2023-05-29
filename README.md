@@ -29,4 +29,4 @@
 
 ## 🛠 Tech Stack
 
-`React`, `Responsive Web`, `Next.JS`, `Spring Boot 3`, `Mongo DB`, `My-SQL`, `AWS EC2`
+`React`, `Responsive Web`, `Next.JS`, `SpringBoot 3`, `MongoDB`, `MySQL`, `AWS EC2`
