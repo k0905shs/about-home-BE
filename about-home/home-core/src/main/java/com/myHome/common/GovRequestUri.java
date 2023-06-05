@@ -34,7 +34,10 @@ public enum GovRequestUri {
     BUILDING_RENT_TOWNHOUSE("openapi.molit.go.kr", "8081", "OpenAPI_ToolInstallPackage/service/rest/RTMSOBJSvc/getRTMSDataSvcRHRent", ResponseFormat.XML),
 
     //건축물 용도
-    BUILDING_USAGE("apis.data.go.kr",  "80", "1611000/nsdi/BuildingUseService/attr/getBuildingUse", ResponseFormat.JSON);
+    BUILDING_USAGE("apis.data.go.kr", "80", "1611000/nsdi/BuildingUseService/attr/getBuildingUse", ResponseFormat.JSON),
+
+    //건축물대장 표제부 조회
+    BUILDING_LEDGER("apis.data.go.kr", "80", "1613000/BldRgstService_v2/getBrTitleInfo", ResponseFormat.XML);
 
     private final String host; //호스트
     private final String port; //포트 번호
