@@ -134,6 +134,30 @@ public class GovServiceImpl implements GovService{
     }
 
     @Override
+    public BuildingLedgerDto.openApiResponse requestBuildingLedgerApi(BuildingLedgerDto.openApiRequestParam requestParam) throws Exception {
+        GovRequestUri requestUrl = GovRequestUri.BUILDING_LEDGER; //건물 전월세 요청 uri
+        String response = this.requestGov(requestParam, requestUrl); //request 요청
+
+        //XML to Json parsing
+        JSONObject jsonObj = XML.toJSONObject(response);
+        JsonNode jsonNode = objectMapper.readTree(jsonObj.get("response").toString());
+
+        List<BuildingLedgerDto.ledgerInfo> openApiList = new ArrayList<>();
+        int totalCount = jsonNode.path("body").get("totalCount").asInt();
+        jsonNode = objectMapper.readTree(jsonNode.path("body").get("items").toString());
+
+        if (totalCount == 1) { //한건만 있는 경우 리스트 변환시 예외 발생하므로 따로 관리함
+            openApiList.add(objectMapper.readValue(jsonNode.path("item").toString()
+                    , new TypeReference<BuildingLedgerDto.ledgerInfo>() {}));
+        } else if (totalCount > 1) { //조회 결과가 2건 이상이면
+            openApiList = objectMapper.readValue(jsonNode.path("item").toString()
+                    , new TypeReference<List<BuildingLedgerDto.ledgerInfo>>(){});
+        }
+        //response return
+        return new BuildingLedgerDto.openApiResponse(openApiList, totalCount);
+    }
+
+    @Override
     public StanReginDto.openApiResponse requestStanReginApi(final StanReginDto.openApiRequestParam requestParam) throws Exception{
         String response = this.requestGov(requestParam, GovRequestUri.STAN_REGIN);
 
