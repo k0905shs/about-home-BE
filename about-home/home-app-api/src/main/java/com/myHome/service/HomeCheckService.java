@@ -28,6 +28,11 @@ public interface HomeCheckService {
     HomeCheckDto.searchRecordResult saveRecord(final HomeCheckDto.searchRecordParam searchRecordParam) throws Exception;
 
     /**
+     * 건축물 대장 정보
+     */
+    HomeCheckDto.checkBuildingLedgerResult checkBuildingLedger(final HomeCheckDto.checkBuildingLedgerParam checkBuildingLedgerParam) throws Exception;
+
+    /**
      * 저당권 설정일 기준 해당 년도 최우선 변제권 정보
      */
     HomeCheckDto.checkPriorityRepayResult checkPriorityRepay(final HomeCheckDto.checkPriorityRepayParam checkPriorityRepayParam) throws Exception;

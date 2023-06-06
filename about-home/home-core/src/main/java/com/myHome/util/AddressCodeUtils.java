@@ -41,6 +41,32 @@ public class AddressCodeUtils {
     }
 
     /**
+     * 번지에서 번만 4자리 빈칸은 0
+     */
+    public static String getBun(String jibun) {
+        String result = null;
+        if (jibun.contains("-")) {
+            String[] arr = jibun.split("-");
+            result = addZero(arr[0], 4);
+        } else {
+            result = addZero(jibun, 4);
+        }
+        return result;
+    }
+
+    /**
+     * 번지에서 지만 4자리 빈칸은 0
+     */
+    public static String getJi(String jibun) {
+        String result = "0000";
+        if (jibun.contains("-")) {
+            String[] arr = jibun.split("-");
+            result = addZero(arr[1], 4);
+        }
+        return result;
+    }
+
+    /**
      * 건물 코드로 lawd_cd(지역별 코드) 확인
      */
     public static String getLawdCd(String buildingCode) {

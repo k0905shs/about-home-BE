@@ -15,8 +15,10 @@ class GovServiceImplTest {
 
     @Test
     void requestBuildingLedgerApi() throws Exception {
-        BuildingLedgerDto.openApiResponse openApiResponse =
-                govService.requestBuildingLedgerApi(new BuildingLedgerDto.openApiRequestParam("11680", "10300", "0", "0012", "0000"));
-        Assertions.assertThat(openApiResponse.getInfoList().get(0).getArchArea()).isEqualTo("271.63");
+        BuildingLedgerDto.openApiRequestParam openApiRequestParam = new BuildingLedgerDto.openApiRequestParam("1138010700101780010024489", "176", 0);
+        System.out.println(openApiRequestParam.toString());
+        BuildingLedgerDto.openApiResponse openApiResponse = govService.requestBuildingLedgerApi(openApiRequestParam);
+        System.out.println(openApiResponse.toString());
+        Assertions.assertThat(openApiResponse.getTotalCount()).isNotEqualTo(0);
     }
 }

@@ -2,6 +2,7 @@ package com.myHome.service;
 
 
 import com.myHome.model.homeCheck.HomeCheckDto;
+import com.myHome.model.openApi.BuildingLedgerDto;
 import com.myHome.model.openApi.BuildingRentDto;
 import com.myHome.model.openApi.BuildingSaleDto;
 import com.myHome.model.openApi.LandPriceDto;
@@ -164,6 +165,28 @@ public class HomeCheckServiceImpl implements HomeCheckService {
     public HomeCheckDto.searchRecordResult saveRecord(HomeCheckDto.searchRecordParam searchRecordParam) {
         SearchRecord searchRecord = searchRecordRepository.save(searchRecordParam.toDocument());
         return new HomeCheckDto.searchRecordResult(true);
+    }
+
+    @Override
+    public HomeCheckDto.checkBuildingLedgerResult checkBuildingLedger(HomeCheckDto.checkBuildingLedgerParam checkBuildingLedgerParam) throws Exception {
+        //FIXME : 주소 검색 api기반 토지코드로 검색하면 결과 안나오는 케이스가 너무 많아서... 우선 0,1,2 순서대로 결과 나올떄 까지 조회하는 방식으로
+        BuildingLedgerDto.openApiResponse openApiResponse = null;
+        for (int i = 0; i < 3; i++) { //대지 코드
+            BuildingLedgerDto.openApiRequestParam openApiRequestParam =
+                    new BuildingLedgerDto.openApiRequestParam(checkBuildingLedgerParam.getBuildingCode(), checkBuildingLedgerParam.getJibun(), i);
+
+            //공공데이터 request
+            openApiResponse = govService.requestBuildingLedgerApi(openApiRequestParam);
+            log.info(openApiResponse.toString());
+            //데이터 정상적으로 왔으면 break
+            if (openApiResponse.getTotalCount() != 0) {
+                break;
+            }
+        }
+
+        //TODO 여기서 어떻게 해당 건물 정보만 뿌려줄 수 있는지 상의 필요함!!!
+
+        return null;
     }
 
     @Override

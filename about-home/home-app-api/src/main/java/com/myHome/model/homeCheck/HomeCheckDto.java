@@ -200,6 +200,54 @@ public class HomeCheckDto {
         }
     }
 
+
+    @Getter
+    @NoArgsConstructor(access = AccessLevel.PROTECTED)
+    @ToString
+    public static class checkBuildingLedgerParam {
+        //TODO : 번지 제외 동 정보 어떻게 정확히 받을지..
+        @Size(min = 1)
+        @NotBlank
+        private String jibun;
+        @Size(min = 20)
+        @NotBlank
+        private String buildingCode;
+
+        public checkBuildingLedgerParam(String jibun, String buildingCode) {
+            this.jibun = jibun;
+            this.buildingCode = buildingCode;
+        }
+    }
+
+
+    @Getter
+    @NoArgsConstructor(access = AccessLevel.PROTECTED)
+    public static class checkBuildingLedgerResult {
+        //TODO : 번지 제외 동 정보 어떻게 정확히 받을지..
+        private String date; //거래 월
+        private buildingLedgerInfo buildingLedgerInfo;
+
+    }
+
+    @Getter
+    @NoArgsConstructor(access = AccessLevel.PROTECTED)
+    public static class buildingLedgerInfo{
+        private String saleDate; //거래 일자
+        private String floor; //층수
+        private String area; //전용 면적
+        private BigDecimal deposit;
+        private BigDecimal rentPrice;
+
+        //building_sale 도큐먼트의 detail 데이터를 dto로 변환
+        public buildingLedgerInfo(BuildingRent.detail buildingRentDetail) {
+            this.floor = buildingRentDetail.getFloor();
+            this.rentPrice = buildingRentDetail.getRentPrice();
+            this.deposit = buildingRentDetail.getDeposit();
+            this.saleDate = buildingRentDetail.getMonth() + "-" + buildingRentDetail.getDay();
+            this.area = buildingRentDetail.getArea();
+        }
+    }
+
     @Getter
     @NoArgsConstructor(access = AccessLevel.PROTECTED)
     public static class checkPriorityRepayParam{

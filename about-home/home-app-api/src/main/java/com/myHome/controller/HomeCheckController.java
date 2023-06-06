@@ -28,7 +28,7 @@ public class HomeCheckController {
      * n년치 건물 실거래가 조회 End Point
      */
     @PostMapping("check-building-sale")
-    public List<HomeCheckDto.checkBuildingSaleResult> checkBuildingSaleParam(@RequestBody @Validated final HomeCheckDto.checkBuildingSaleParam checkBuildingSaleParam) throws Exception {
+    public List<HomeCheckDto.checkBuildingSaleResult> checkBuildingSale(@RequestBody @Validated final HomeCheckDto.checkBuildingSaleParam checkBuildingSaleParam) throws Exception {
         return homeCheckService.checkBuildingSale(checkBuildingSaleParam);
     }
 
@@ -36,7 +36,7 @@ public class HomeCheckController {
      * n년치 건물 전/월세 조회 End Point
      */
     @PostMapping("check-building-rent")
-    public List<HomeCheckDto.checkBuildingRentResult> checkBuildingRentParam(@RequestBody @Validated final HomeCheckDto.checkBuildingRentParam checkBuildingRentParam) throws Exception {
+    public List<HomeCheckDto.checkBuildingRentResult> checkBuildingRent(@RequestBody @Validated final HomeCheckDto.checkBuildingRentParam checkBuildingRentParam) throws Exception {
         return homeCheckService.checkBuildingRent(checkBuildingRentParam);
     }
 
@@ -46,6 +46,14 @@ public class HomeCheckController {
     @PostMapping("search-record")
     public HomeCheckDto.searchRecordResult saveRecord(@RequestBody @Validated final HomeCheckDto.searchRecordParam searchRecordParam) throws Exception{
         return homeCheckService.saveRecord(searchRecordParam);
+    }
+
+    /**
+     * 건축물대장 조회 End Point
+     */
+    @PostMapping("search-building-ledger")
+    public HomeCheckDto.checkBuildingLedgerResult checkBuildingLedger(@RequestBody @Validated final HomeCheckDto.checkBuildingLedgerParam checkBuildingLedgerParam) throws Exception{
+        return null;
     }
 
     /**
